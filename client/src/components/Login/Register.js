@@ -68,10 +68,10 @@ const Register = () => {
                 position: "top-center"
             });
         } else {
-            // console.log("user registration succesfully done");
+            console.log("user registration succesfully done");
 
 
-            const data = await fetch("/register", {
+            /*const data = await fetch("/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -89,7 +89,7 @@ const Register = () => {
                     position: "top-center"
                 });
                 setInpval({ ...inpval, fname: "", email: "", password: "", cpassword: "" });
-            }
+            }*/
         }
     }
 
@@ -99,8 +99,8 @@ const Register = () => {
                 <div className="form_data">
                     <div className="form_heading">
                         <h1>Sign Up</h1>
-                        <p style={{ textAlign: "center" }}>We are glad that you will be using Project Cloud to manage <br />
-                            your tasks! We hope that you will get like it.</p>
+                        <p style={{ textAlign: "center" }}>We are glad, you chose us for your career growth <br />
+                            We wish you best of luck.</p>
                     </div>
 
                     <form>
@@ -133,6 +133,7 @@ const Register = () => {
                         </div>
 
                         <button className='btn' onClick={addUserdata}>Sign Up</button>
+                        
                         <p>Already have an account? <NavLink to="/">Log In</NavLink></p>
                     </form>
                     <ToastContainer />

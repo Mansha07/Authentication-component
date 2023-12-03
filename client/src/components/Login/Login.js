@@ -3,7 +3,9 @@ import { NavLink ,useNavigate} from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
 import "./mix.css"
 
+
 const Login = () => {
+    
 
     const [passShow, setPassShow] = useState(false);
 
@@ -49,10 +51,10 @@ const Login = () => {
                 position: "top-center"
             });
         } else {
-            // console.log("user login succesfully done");
+            console.log("user login succesfully done");
 
 
-            const data = await fetch("/login",{
+            /*const data = await fetch("/login",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -69,7 +71,7 @@ const Login = () => {
                 localStorage.setItem("usersdatatoken",res.result.token);
                 history("/dash")
                 setInpval({...inpval,email:"",password:""});
-            }
+            }*/
         }
     }
 
@@ -78,8 +80,8 @@ const Login = () => {
             <section>
                 <div className="form_data">
                     <div className="form_heading">
-                        <h1>Welcome Back, Log In</h1>
-                        <p>Hi, we are you glad you are back. Please login.</p>
+                    <h1 align="center">Welcome to your all in one career portal</h1>
+                        <p>We are you glad you are back. Please login.</p>
                     </div>
 
                     <form>
@@ -98,7 +100,9 @@ const Login = () => {
                         </div>
 
                         <button className='btn' onClick={loginuser}>Login</button>
+                        <NavLink to="/home">Login</NavLink>
                         <p>Don't have an Account? <NavLink to="/register">Sign Up</NavLink> </p>
+
                     </form>
                     <ToastContainer />
                 </div>

@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import Avatar from '@mui/material/Avatar';
 import "./header.css"
-import { LoginContext } from './ContextProvider/Context';
+import { LoginContext } from '../ContextProvider/Context';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate , NavLink } from "react-router-dom"
 
-const Header = () => {
+const Header1 = () => {
 
     const { logindata, setLoginData } = useContext(LoginContext);
 
@@ -61,11 +61,11 @@ const Header = () => {
             <header>
                 <nav>
                     
-                <NavLink to="/"><h1>HP Cloud</h1></NavLink>
+                <NavLink to="/"><h1>SkillVista</h1></NavLink>
                     <div className="avtar">
                         {
                             logindata.ValidUserOne ? <Avatar style={{ background: "salmon", fontWeight: "bold", textTransform: "capitalize" }} onClick={handleClick}>{logindata.ValidUserOne.fname[0].toUpperCase()}</Avatar> :
-                                <Avatar style={{ background: "blue" }} onClick={handleClick} />
+                                <Avatar style={{ background: "black" }} onClick={handleClick} />
                         }
 
                     </div>
@@ -108,4 +108,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header1

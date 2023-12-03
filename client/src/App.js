@@ -1,14 +1,19 @@
-import Header from "./components/Header";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Header from "./components/Header/Header";
+import Login from "./components/Login/Login";
+import Register from "./components/Login/Register";
 import Dashboard from "./components/Dashboard";
 import Error from "./components/Error";
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
-import { Routes, Route, useNavigate } from "react-router-dom"
+import Home from "./components/home/Home";
+import CAT from "./components/CAT/CAT";
+import GATE from "./components/gate/GATE";
+import UPSC from "./components/UPSC/UPSC";
+import Inter from "./components/Inter/Inter";
+import Chat from "./ChatGPT/Chat";
+import {Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
-
 
 function App() {
 
@@ -49,18 +54,25 @@ function App() {
 
   }, [])
 
+
   return (
     <>
       {
         data ? (
           <>
-            <Header />
 
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dash" element={<Dashboard />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/CAT" element={<CAT />} />
               <Route path="*" element={<Error />} />
+              <Route path="/GATE" element={< GATE />} />
+              <Route path="/Inter" element={<Inter />} />
+              <Route path="/UPSC" element={<UPSC />} />
+              <Route path="/Chat" element={<Chat />} />
+              
             </Routes>
           </>
 
@@ -73,6 +85,34 @@ function App() {
 
     </>
   );
-}
+    }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
