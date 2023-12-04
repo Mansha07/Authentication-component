@@ -6,7 +6,7 @@ function GATE() {
         const [progress, setProgress] = useState(0);
       
         const increaseProgress = () => {
-            setProgress(prevProgress => (prevProgress < 100 ? prevProgress + 10 : prevProgress));
+            setProgress(prevProgress => (prevProgress < 100 ? prevProgress + 5 : prevProgress));
           };
   return (
     <div>
@@ -39,6 +39,9 @@ function GATE() {
               </a>
             </div>
           </div>
+          <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Agricultural Engineering</h2>
@@ -51,6 +54,9 @@ function GATE() {
                     <a href="https://www.youtube.com/@agriculturalengineeringcra7258" target="_blank">Resource 1</a>
                     <a href="https://youtube.com/playlist?list=PLvmjh9Pcic_BXTvl6ifj2I5CGFjv42hzD&si=eB-kNpM78nEfWSHt">Resource 2</a>
                 </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <section  class="three_column">
@@ -66,6 +72,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLAM7pQT4Sexv5pSSq2DtwWIzSyB2kIDmd&si=WE-jrfzvcEZS2xWl">Resource 3</a>
                 </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Biomedical Engineering </h2>
@@ -79,6 +88,9 @@ function GATE() {
                     <a href="https://youtu.be/JFF2vJaN0Cw?si=Ihi82UKVBfUPOUEY">Resource 2</a>
                     <a href="https://youtu.be/4qOwsqXACxE?si=4nzpfBajci4y6aML">Resource 3</a>
                 </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <section  class="three_column">
@@ -96,6 +108,9 @@ function GATE() {
 
                 </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Chemical Engineering </h2>
@@ -112,6 +127,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PL0b9qDcBZ_XuILxnJsusJrzKPThrvDLeC&si=ErMoSPBlQrT0tEHD">Resource 5</a>
                     <a href="https://youtube.com/playlist?list=PLd-Nt1qhPOno_CmjbGY-77Zm0U8w9MWgt&si=unoc3xs4VhbImOP0">Resource 6</a>
                 </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <section  class="three_column">
@@ -132,6 +150,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLd-Nt1qhPOno_CmjbGY-77Zm0U8w9MWgt&si=unoc3xs4VhbImOP0">Resource 8</a>
                 </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Electronics & Communication</h2>
@@ -148,6 +169,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLvMOQ5JLTIeYWBNFSCsOJNx7hjiAtF6yW&si=aqimdNewgt5gSJSk">Resource 5</a>
 
             </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
 
@@ -174,6 +198,9 @@ function GATE() {
               </a>
             </div>
           </div>
+          <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
 
         <section  class="three_column">
@@ -211,6 +238,9 @@ function GATE() {
 
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Electrical Engineering</h2>
@@ -228,6 +258,9 @@ function GATE() {
 
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Chemistry</h2>
@@ -242,6 +275,9 @@ function GATE() {
                     <a href="">Resource 3</a>
 
             </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <section  class="three_column">
@@ -278,6 +314,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLjtQ3BMex7hu0Ln7R58nvkgDDcFSemYqi&si=NorezS0mTYNj1Khb">Resource 4</a>
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Mining Engineering</h2>
@@ -292,6 +331,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLgk-8purBMo9QGOtznh0pz6d1zRYujmM_&si=zCM-dd766nw87tWS">Resource 3</a>
 
             </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <section  class="three_column">
@@ -310,6 +352,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLO4TWepMw7ggC5rCS3U_lDDWl4X_m6FML&si=MUk4MiDKcOMhAQ9l">Resource 6</a>
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Naval Architecture & Marine Engineering</h2>
@@ -324,6 +369,9 @@ function GATE() {
 
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2>Petroleum Engineering</h2>
@@ -337,6 +385,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PL2XhEmLo9urt9pDfooBoCm9dmeBNDxcB5&si=5lTJ-_8Ufm6LI15c">Resource 2</a>
                     <a href="https://youtube.com/playlist?list=PLIwv3BrFJYXL9Q-QY9vmbg5UkREIdkkfr&si=nqksfgRn8ysZ5EuX">Resource 3</a>
             </div>
+            </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <section  class="three_column">
@@ -355,6 +406,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLb2wGSuEdRG-80PlUnUyBoLw-WqfVd00C&si=9WWGfBLqbg41M9CL">Resource 6</a>
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Production & Industrial Engineering</h2>
@@ -372,6 +426,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLiSPNzs4fD9thoA6PAFoqjnTJmlJ0UU8O&si=QK5k4S5GFtgcW_4-">Resource 6</a>
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Statistics</h2>
@@ -387,6 +444,9 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK&si=i9GlqRjV9zG-GVYs">Resource 4</a>
                 </div>
                 </div>
+                <div>
+                <button onClick={increaseProgress}>Done</button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Textile Engineering & Fibre Science</h2>
@@ -405,6 +465,9 @@ function GATE() {
 
             </div>
             </div>
+            <div>
+                <button onClick={increaseProgress}>Done </button> 
+            </div>
         </section>
         <section  class="three_column">
             <h2> Life Sciences</h2>
@@ -420,7 +483,7 @@ function GATE() {
             </div>
             </div>
             <div>
-                <button onClick={increaseProgress}>Increase Progress</button> 
+                <button onClick={increaseProgress}>Done</button> 
             </div>
         </section>
         <div className="progress-container">

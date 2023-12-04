@@ -10,7 +10,7 @@ import CAT from "./components/CAT/CAT";
 import GATE from "./components/gate/GATE";
 import UPSC from "./components/UPSC/UPSC";
 import Inter from "./components/Inter/Inter";
-import Chat from "./ChatGPT/Chat";
+import Chat from "./components/Chat/Chat";
 import AboutUs from "./components/AboutUs/AboutUs";
 import {Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";

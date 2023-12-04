@@ -54,7 +54,7 @@ const Login = () => {
             console.log("user login succesfully done");
 
 
-            const data = await fetch("/http://localhost:8009/",{
+            const data = await fetch("http://localhost:8009/",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -65,7 +65,7 @@ const Login = () => {
             });
 
             const res = await data.json();
-            //  console.log(res);
+              console.log(res);
 
             if(res.status === 201){
                 localStorage.setItem("usersdatatoken",res.result.token);
