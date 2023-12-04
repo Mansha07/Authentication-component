@@ -54,7 +54,7 @@ const Login = () => {
             console.log("user login succesfully done");
 
 
-            /*const data = await fetch("/login",{
+            const data = await fetch("/http://localhost:8009/",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -71,7 +71,7 @@ const Login = () => {
                 localStorage.setItem("usersdatatoken",res.result.token);
                 history("/dash")
                 setInpval({...inpval,email:"",password:""});
-            }*/
+            }
         }
     }
 

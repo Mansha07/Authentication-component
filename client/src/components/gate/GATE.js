@@ -1,7 +1,13 @@
 // GATE.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./GATE.css";
+
 function GATE() {
+        const [progress, setProgress] = useState(0);
+      
+        const increaseProgress = () => {
+            setProgress(prevProgress => (prevProgress < 100 ? prevProgress + 10 : prevProgress));
+          };
   return (
     <div>
       <header>
@@ -411,10 +417,17 @@ function GATE() {
                     <a href="https://youtube.com/playlist?list=PLBUibmA0dbhuxdPuekLVpmazJ7GwZtOl5&si=_E7bjjwnIPPEi1e6" target="_blank">Resource 1</a>
                     <a href="https://youtube.com/playlist?list=PLzM6kYYxIX9BqxociM9KCpfPlwtgIUvEs&si=CiDeMfUvOe_iMvJY">Resource 2</a>
                     <a href="https://youtube.com/playlist?list=PLDrGN_aGTtbHrmecK_pTP_7M3EK6LTlUf&si=0AS5ZV6_O7FjnQ_1">Resource 3</a>
-
             </div>
             </div>
-        </section> 
+            <div>
+                <button onClick={increaseProgress}>Increase Progress</button> 
+            </div>
+        </section>
+        <div className="progress-container">
+          <progress value={progress} max="100"></progress>
+          <span>{progress}%</span>
+    
+        </div>
       </main>
 
     </div>

@@ -20,16 +20,12 @@ const Home = () => {
                 </a>
               </li>
               <li className="nav-item">
+                <Link to="/AboutUs">
                 <a href="/about-us">
                   About Us
                   <span className="down-arrow">▼</span>
                 </a>
-              </li>
-              <li className="nav-item">
-                <a href="/contact-us">
-                  Contact Us
-                  <span className="down-arrow">▼</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

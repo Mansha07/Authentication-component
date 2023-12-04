@@ -11,6 +11,7 @@ import GATE from "./components/gate/GATE";
 import UPSC from "./components/UPSC/UPSC";
 import Inter from "./components/Inter/Inter";
 import Chat from "./ChatGPT/Chat";
+import AboutUs from "./components/AboutUs/AboutUs";
 import {Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
@@ -72,7 +73,7 @@ function App() {
               <Route path="/Inter" element={<Inter />} />
               <Route path="/UPSC" element={<UPSC />} />
               <Route path="/Chat" element={<Chat />} />
-              
+              <Route path="/AboutUs" element={<AboutUs />} />
             </Routes>
           </>
 

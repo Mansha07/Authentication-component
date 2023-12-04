@@ -1,0 +1,19 @@
+/* TeamMemberCard.css */
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50 ;
+}

@@ -27,14 +27,12 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .three_column {
   flex: 1 0 calc(33.33% - 20px); /* Each section takes up one-third of the width with some gap */
   margin: 5px 0; /* Adjust the margin */
-              background-color: #ffffff;
-
-
+  background-color: #ffffff;
 }
-
 
 h2 {
   color: #333;
@@ -50,7 +48,7 @@ ul {
 li {
   margin: 10px;
   padding: 10px;
-  background-color: #72a8e6;
+  background-color: #000000;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -64,9 +62,9 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #3781cb;
+  background-color: #ffffff;
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -81,12 +79,32 @@ li {
   display: block;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em;
+/* Progress bar styles */
+.progress-container {
   position: fixed;
   bottom: 0;
-  width: 100;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
 }

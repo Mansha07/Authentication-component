@@ -19,3 +19,4 @@ function Connection(username, password) {
 }
 
 module.exports = Connection;
+

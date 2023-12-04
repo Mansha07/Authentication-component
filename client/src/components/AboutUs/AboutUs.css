@@ -1,0 +1,11 @@
+/* AboutUs.css */
+.about-us-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
